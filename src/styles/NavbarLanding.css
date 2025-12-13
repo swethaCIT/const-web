@@ -1,0 +1,79 @@
+.landing-nav {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+
+  /* LIGHT ORANGE GRADIENT */
+  background: linear-gradient(
+    90deg,
+    #ffe8d1 0%,   /* very light peach */
+    #ffb879 50%,  /* soft orange */
+    #ffa45c 100%  /* warm smooth orange */
+  );
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #d65f16; /* warm orange for branding */
+}
+
+.logo span {
+  color: #ff7a30;
+}
+
+.nav-center {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-center a {
+  text-decoration: none;
+  color: #5a4635;     /* soft brown/gray for classy look */
+  font-size: 15px;
+  transition: 0.2s ease;
+  font-weight: 500;
+}
+
+.nav-center a:hover {
+  color: #ff7a30;     /* orange on hover */
+}
+
+
+.login-btn {
+  padding: 8px 18px;
+  background: white;                 
+  color: #ff7a30;                    
+  border: 2px solid #ff7a30;         
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.25s ease;            /* smooth transition */
+}
+
+/* Hover: full solid orange */
+.login-btn:hover {
+  background: #ff7a30;               /* solid orange */
+  color: white;                      /* white text */
+  border-color: #ff7a30;
+}
+
+/* mobile responsive */
+@media (max-width: 768px) {
+  .nav-center {
+    display: none;
+  }
+
+  .landing-nav {
+    padding: 0 20px;
+  }
+}

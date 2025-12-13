@@ -1,0 +1,221 @@
+/* PAGE */
+.dashboard-wrapper {
+  padding-top: 80px;
+  background: #f9fafb;
+  min-height: 100vh;
+}
+
+/* 🔶 BANNER */
+.dashboard-banner {
+  position: relative;
+  height: 320px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+}
+
+.dashboard-banner .banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.dashboard-banner .banner-content {
+  position: relative;
+  z-index: 2;
+  padding: 40px 80px;
+  color: white;
+}
+
+.dashboard-banner h1 {
+  font-size: 42px;
+  font-weight: 800;
+}
+
+.owner-info {
+  margin-top: 12px;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* 🔶 OVERVIEW SECTION */
+.overview-section {
+  padding: 40px 80px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.overview-card {
+  background: white;
+  padding: 22px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.overview-card h3 {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.big-text {
+  font-size: 24px;
+  font-weight: 800;
+  color: #f97316;
+}
+
+/* 🔥 MODERN TIMELINE CARD */
+.timeline-card-modern {
+  background: white;
+  border-radius: 18px;
+  padding: 26px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+  grid-column: span 2;
+}
+
+/* CIRCULAR RING */
+.progress-ring {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-center {
+  width: 110px;
+  height: 110px;
+  background: white;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 22px;
+}
+
+.progress-center h2 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #f97316;
+}
+
+.progress-center p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* INFO */
+.timeline-info h3 {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.days-info {
+  font-size: 15px;
+  font-weight: 600;
+  color: #444;
+}
+
+.date-row {
+  display: flex;
+  gap: 16px;
+  margin: 8px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* STATUS BADGES */
+.status-badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+.status-badge.completed {
+  background: #16a34a;
+  color: white;
+}
+
+.status-badge.ontrack {
+  background: #2563eb;
+  color: white;
+}
+
+.status-badge.delayed {
+  background: #dc2626;
+  color: white;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .timeline-card-modern {
+    flex-direction: column;
+    text-align: center;
+    grid-column: span 1;
+  }
+
+  .date-row {
+    justify-content: center;
+  }
+}
+
+/* 🔶 DETAILS */
+.details-section {
+  padding: 0 80px 30px;
+}
+
+.details-section h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.details-section p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* 🔶 CHARTS */
+.charts-section {
+  padding: 30px 80px 60px;
+}
+
+.chart-placeholder {
+  height: 220px;
+  background: white;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  font-weight: 600;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+  .dashboard-banner .banner-content {
+    padding: 30px 20px;
+  }
+
+  .overview-section,
+  .details-section,
+  .charts-section {
+    padding: 20px;
+  }
+
+  .timeline-card {
+    grid-column: span 1;
+  }
+
+  .dashboard-banner h1 {
+    font-size: 30px;
+  }
+}
